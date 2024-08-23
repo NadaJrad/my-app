@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 import logo from './logo.svg';
 import './App.css';
 
@@ -21,5 +24,19 @@ function App() {
     </div>
   );
 }
+
+
+ReactDOM.createRoot(
+  <div>
+    <h1>My favorites Foods</h1>
+    <ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+   </ul>  
+
+  </div>,
+  document.getElementById("root")
+)
 
 export default App;
